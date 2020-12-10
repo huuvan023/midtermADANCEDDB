@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MidTerm2020
+namespace ADBTeam100_DB4O
 {
     [Serializable]
     public class CongTy
@@ -17,6 +17,16 @@ namespace MidTerm2020
         public string QuanHuyen { get; set; }
 		public NhanVien GiamDoc { get; set; }
 
+        public CongTy(Guid MaCongTy, string MaSoThue, string TenCongTy, string SoNha, string DuongPho, string QuanHuyen, NhanVien GiamDoc)
+        {
+            this.MaCongTy = MaCongTy;
+            this.MaSoThue = MaSoThue;
+            this.TenCongTy = TenCongTy;
+            this.SoNha = SoNha;
+            this.DuongPho = DuongPho;
+            this.QuanHuyen = QuanHuyen;
+            this.GiamDoc = GiamDoc;
+        }
         public override string ToString()
         {
             return TenCongTy;
