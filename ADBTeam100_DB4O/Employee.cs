@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MidTerm2020
+namespace ADBTeam100_DB4O
 {
     [Serializable]
     public class NhanVien
